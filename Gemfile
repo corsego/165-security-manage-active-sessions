@@ -65,3 +65,5 @@ group :test do
 end
 
 gem "devise", "~> 4.9"
+
+gem "device_detector", "~> 1.1"

@@ -21,6 +21,7 @@
   <body>
     <%= link_to 'Home', root_path %>
     <%= link_to 'Admin', admin_path %>
+    <%= link_to 'Logins', logins_path %>
     <% if signed_in? %>
       <%= link_to current_user.email, edit_user_registration_path %>
       <%= button_to "Log out", destroy_user_session_path, method: :delete, data: { turbo: "false" } %>

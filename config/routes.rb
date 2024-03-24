@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, controllers: {
+    sessions: 'users/sessions'
+  }
+  resources :logins
+  # devise_for :users
   get "admin", to: "home#admin"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
